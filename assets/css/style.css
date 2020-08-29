@@ -1,0 +1,146 @@
+/*
+	style.css
+	oof
+*/
+body {
+	color: #fff;
+	overflow: hidden;
+	background-color: #000;
+	background-image: linear-gradient(to bottom, #000, #000022);
+}
+img {
+	-webkit-user-drag: none;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+/*
+	HTML_CANVAS
+*/
+.HTML_CANVAS{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	background: #0000;
+	position: absolute;
+}
+/*
+	Divs
+*/
+.MENU_BOTTOM{
+	left: 0px;
+	color: #fff;
+	width: 100%;
+	bottom: 0px;
+	height: 28px;
+	position: fixed;
+	font-size: 12px;
+	overflow: hidden;
+	padding-top: 10px;
+	user-select: none;
+	text-align: center;
+	font-style: italic;
+	background-color: #0000;
+	background-image: linear-gradient(90deg, #0000, #444, #0000);
+}
+.CENTER_DIV{
+	top: 50%;
+    left: 50%;
+    width: 50%;
+    padding: 10px;
+	position: fixed;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #0000;
+	box-shadow: 0 0 90px #003;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom, #666, #444);
+}
+.DIV_TOOL{
+	width: 30%;
+	padding: 10px;
+	cursor: pointer;
+	user-select: none;
+	display: inline flow-root;
+}
+.DIV_TOOLS_BG{
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	border-radius: 4px;
+	background-color: #000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-mask-image: linear-gradient(to left, #00000014, #00000014);
+	background-image: url('https://avatars1.githubusercontent.com/u/32562725?s=460&u=b81f458449365c75f00663c5d6f7f12fd4677dc0&v=4');
+}
+/*
+	Buttons
+*/
+.BTN_MENU_TOP{
+	border: none;
+	padding: 6px;
+	outline: none;
+	margin-right: 4px;
+	text-shadow: 0 0 10px #eee;
+	background-image: linear-gradient(to bottom, #dbdbdb, #b3b3b3);
+}
+.BTN_MENU_TOP:active{
+	text-shadow: 0 0 10px #fff;
+	background-image: linear-gradient(to bottom, #b3b3b3, #dbdbdb);
+}
+/*
+	Imgs
+*/
+.IMG_TOOL{
+	width: 50%;
+}
+/*
+	Labels
+*/
+.LBL_MAJOR_TITLE{
+	user-select: none;
+	font-size: xx-large;
+	text-shadow: 0px 0px 10px #222;
+}
+.LBL_CENTER{
+	user-select: none;
+	text-align: center;
+}
+.LBL_TITLE{
+	user-select: none;
+	font-size: xx-large;
+}
+.LBL_COLOR_0{
+	text-shadow: 0px 0px 10px #aa0000;
+}
+.LBL_COLOR_1{
+	text-shadow: 0px 0px 10px #0eb5e5;
+}
+.LBL_COLOR_2{
+	text-shadow: 0px 0px 10px #a02fdb;
+}
+.LBL_COLOR_3{
+	text-shadow: 0px 0px 10px #151515;
+}
+/*
+	Misc
+*/
+.none{
+	display: none;
+}
+.user-can-select{
+	user-select: all;
+}
