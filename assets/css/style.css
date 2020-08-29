@@ -68,7 +68,7 @@ a:visited {
 	padding: 10px;
 	cursor: pointer;
 	user-select: none;
-	display: inline flow-root;
+	display: inline-block;
 }
 .DIV_TOOLS_BG{
 	top: 0px;
