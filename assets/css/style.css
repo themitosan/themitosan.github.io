@@ -13,7 +13,12 @@ img {
 }
 a {
 	color: #fff;
+  	user-drag: none;
+  	-o-user-drag: none;
+  	-moz-user-drag: none;
 	text-decoration: none;
+  	-khtml-user-drag: none;
+	-webkit-user-drag: none;
 }
 a:visited {
 	color: #fff;
