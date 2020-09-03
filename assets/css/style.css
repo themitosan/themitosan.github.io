@@ -88,8 +88,8 @@ a:visited {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	-webkit-mask-image: linear-gradient(to left, #00000014, #00000014);
-	background-image: url('https://avatars1.githubusercontent.com/u/32562725?s=460&u=b81f458449365c75f00663c5d6f7f12fd4677dc0&v=4');
+	-webkit-mask-image: linear-gradient(to left, #0000001f, #00000005);
+	background-image: url('https://avatars2.githubusercontent.com/u/32562725?s=400&u=3907deae61130f2b0955719e875d96db6d43b40d&v=4');
 }
 /*
 	Buttons
