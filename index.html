@@ -22,11 +22,11 @@
 						This is the first tool used to create simple mods for all versions of Resident Evil 3!
 					</div>
 				</a>
-				<a onclick="window.alert('This tool is not available, since it is on closed development.');">
+				<a onclick="TMS_SHOW_R3V2();">
 					<div class="DIV_TOOL">
-						<img src="assets/img/R3V2.png" class="IMG_TOOL" draggable="false" alt="R3ditor">
-						<div class="LBL_TITLE LBL_CENTER LBL_COLOR_0">R3ditor V2</div>
-						Being developed as closed-source, This is a remake of OG R3ditor - a tool to modify Resident Evil 3!
+						<img src="assets/img/R3V2.png" class="IMG_TOOL" draggable="false" alt="R3ditor_V2">
+						<div class="LBL_TITLE LBL_CENTER LBL_COLOR_0">R3V2</div>
+						Being developed as closed-source, This is a remake of OG R3ditor! [WIP]
 					</div>
 				</a>
 				<a href="https://github.com/themitosan/RJX_Toolset" target="_blank">
@@ -44,8 +44,20 @@
 					</div>
 				</a>
 			</div>
+			<div id="MENU_R3V2" class="CENTER_DIV none">
+				<img src="assets/img/R3V2.png" class="IMG_TOOL" draggable="false" alt="R3V2"><br>
+				<font class="LBL_MAJOR_TITLE">R3ditor V2 (Aka. R3V2)</font><br>
+				This is a <u>early-alpha</u> remake of R3ditor OG - An tool to edit Resident Evil 3 OG!<br>
+				For now you can decompile the game, open maps, edit SCD scripts, messages and cameras.<br><br>
+				Some features (Like RE3SET and SAV Editor) are still missing, but they will be implemented later.<br><br>
+				<u>This tool is not available yet.</u><br><br>
+				<div class="none">
+					<input type="button" id="BTN_WEB" class="BUTTON_BASE" value="Try web version [ALPHA]" title="Click here to test alpha version on your browser" onclick="TMS_RUN_R3V2();">
+					<input type="button" id="BTN_DOWN" class="BUTTON_BASE BTN_DOWN" value="Download demo [Win. x64 ALPHA - MediaFire]" title="Click here to download alpha demo for Windows x64" onclick="TMS_DOWNLOAD_R3V2();">
+				</div>
+			</div>
 			<div id="MENU_BOTTOM" class="MENU_BOTTOM">
-				2020 - Site created by <a href="https://twitter.com/themitosan" target="_blank">TheMitoSan</a>, Art by <a href="https://twitter.com/artist_zu" target="_blank">Y (The Artist) zu</a>
+				<font id="LBL_YEAR">2020</font> - Site created by <a href="https://twitter.com/themitosan" title="An follow will not hurt :D" class="aboutLink" target="_blank">TheMitoSan</a>, Art by <a class="aboutLink" href="https://twitter.com/artist_zu" title="An follow will not hurt :D" target="_blank">Y (The Artist) zu</a>
 			</div>
 		</div>
 	</body>
