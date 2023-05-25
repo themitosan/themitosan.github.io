@@ -1,0 +1,233 @@
+/*
+	style.css
+	oof
+*/
+body {
+	color: #fff;
+	overflow: hidden;
+	user-select: none;
+	font-family: monospace;
+	background-color: #000;
+	-webkit-user-select: none;
+	text-shadow: 1px 1px 4px #000;
+	background-image: linear-gradient(180deg, #000, #000022);
+}
+img {
+	-webkit-user-drag: none;
+}
+a {
+	color: #fff;
+  	user-drag: none;
+  	-o-user-drag: none;
+  	-moz-user-drag: none;
+	text-decoration: none;
+  	-khtml-user-drag: none;
+	-webkit-user-drag: none;
+}
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*
+	HTML_CANVAS
+*/
+.HTML_CANVAS {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	background: #0000;
+	position: absolute;
+	align-items: center;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+/*
+	Divs
+*/
+.MENU_BOTTOM {
+	left: 0px;
+	color: #fff;
+	width: 100%;
+	bottom: 0px;
+	height: 28px;
+	z-index: 100;
+	font-size: 12px;
+	overflow: hidden;
+	padding-top: 10px;
+	user-select: none;
+	position: absolute;
+	text-align: center;
+	font-style: italic;
+	background-color: #0000;
+	backdrop-filter: blur(2px);
+	background-image: linear-gradient(90deg, #0000, #444, #0000);
+}
+.CENTER_DIV {
+    width: 56%;
+    z-index: 10;
+    padding: 10px;
+    position: fixed;
+    overflow: hidden;
+    min-width: 736px;
+    text-align: center;
+    background-color: #0000;
+    box-shadow: 0px 0px 20px #003;
+    border-radius: 26px 6px 26px 6px;
+    background-image: linear-gradient(180deg, #666, #444);
+}
+.DIV_TOOL {
+	width: 30%;
+	padding: 10px;
+	cursor: pointer;
+	user-select: none;
+	display: inline-block;
+	text-shadow: 2px 2px 4px #000a;
+}
+.DIV_TOOLS_BG {
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	border-radius: 4px;
+	background-color: #000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(4px) opacity(0.6);
+	-webkit-mask-image: linear-gradient(90deg, #0002, #0001);
+	background-image: url('https://avatars1.githubusercontent.com/u/32562725?s=460&u=4cd05c18b45c084fbb278e26cbf81936fc11824e&v=4');
+}
+.DIV_DISCORD_R3V2 {
+	z-index: 1;
+	right: 20px;
+	width: 350px;
+	height: 500px;
+	display: none;
+	top: calc(50% - 250px);
+	position: fixed !important;
+}
+/*
+	Buttons
+*/
+.BTN_MENU_TOP {
+	border: none;
+	padding: 6px;
+	outline: none;
+	margin-right: 4px;
+	text-shadow: 0px 0px 10px #eee;
+	background-image: linear-gradient(180deg, #ddd, #b3b3b3);
+}
+.BTN_MENU_TOP:active {
+	text-shadow: 0px 0px 10px #fff;
+	background-image: linear-gradient(180deg, #b3b3b3, #ddd);
+}
+.BUTTON_BASE {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-top: 10px;
+	padding-top: 4px;
+	padding-left: 14px;
+	border-radius: 4px;
+	padding-right: 14px;
+	padding-bottom: 4px;
+	text-shadow: 0px 0px 10px #fff;
+	box-shadow: 0px 0px 10px #2f2f2f;
+	background-image: linear-gradient(180deg, #fff, #aaa);
+}
+.BUTTON_BASE:active {
+	background-image: linear-gradient(180deg, #aaa, #fff);	
+}
+.BTN_DOWN {
+	color: #fff;
+	text-shadow: 0px 0px 10px #003800;
+	background-image: linear-gradient(180deg, #00c000, #299a00);
+}
+.BTN_DOWN:active {
+	background-image: linear-gradient(180deg, #299a00, #00c000);	
+}
+/*
+	Imgs
+*/
+.IMG_TOOL {
+	width: 30%;
+	max-width: 120px;
+}
+/*
+	Labels
+*/
+.LBL_MAJOR_TITLE {
+	user-select: none;
+	font-size: xx-large;
+	font-family: system-ui;
+	text-shadow: 0px 0px 10px #222;
+}
+.LBL_CENTER {
+	user-select: none;
+	text-align: center;
+}
+.LBL_TITLE {
+	display: flex;
+	user-select: none;
+	flex-wrap: nowrap;
+	font-size: xx-large;
+	align-items: center;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+.LBL_COLOR_0 {
+	text-shadow: 0px 0px 10px #aa0000;
+}
+.LBL_COLOR_1 {
+	text-shadow: 0px 0px 10px #0eb5e5;
+}
+.LBL_COLOR_2 {
+	text-shadow: 0px 0px 10px #a02fdb;
+}
+.LBL_COLOR_3 {
+	text-shadow: 0px 0px 10px #2a4a85;
+}
+.LBL_COLOR_4 {
+	text-shadow: 0px 0px 10px #661691;
+}
+.LBL_COLOR_5 {
+	text-shadow: 0px 0px 10px #440000;
+}
+/*
+	Misc
+*/
+.none {
+	display: none;
+}
+.user-can-select {
+	user-select: all;
+}
+.aboutLink {
+	text-shadow: 0px 0px 10px #9500ff88;
+}
+/*
+	Select
+*/
+.R3V2_DOWN_VERSION {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding-top: 4px;
+	padding-left: 8px;
+	border-radius: 4px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	background-image: linear-gradient(180deg, #fff, #aaa);
+}
+.R3V2_DOWN_VERSION:active {
+	background-image: linear-gradient(180deg, #aaa, #fff);
+}
