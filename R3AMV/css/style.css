@@ -1,0 +1,341 @@
+/*
+	R3 Auto Map View
+	styles.css
+*/
+
+body {
+	color: #fff;
+	user-select: none;
+	font-family: monospace;
+	background-color: #000;
+}
+input[type="file"] {
+	display: none !important;
+}
+input[id="BTN_DEV_KB_SH"] {
+	margin: 0px 2px 8px 2px !important;
+}
+input[id="BTN_SELECT_EXE"] {
+	margin: 8px 2px 0px 2px !important;
+}
+input[type="button"] {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	min-height: 24px;
+	max-height: 30px;
+	margin: 0px 2px 0px 2px;
+	width: calc(100% - 20px);
+	background-image: linear-gradient(180deg, #fff, #999);
+}
+input[type="button"]:active {
+	color: #666a;
+	filter: blur(0.6px);
+	text-shadow: 0px 0px 10px #0006;
+	box-shadow: 0px 0px 8px #000 inset;
+	background-image: linear-gradient(0deg, #fff, #999);
+}
+input[type="button"]:disabled {
+	display: none;
+}
+input[type="range"] {
+	outline: none;
+	cursor: col-resize;
+	margin: 4px 0px 4px 0px;
+	width: calc(100% - 18px);
+}
+input[type="checkbox"] {
+	cursor: pointer;
+	vertical-align: middle;
+}
+img {
+	user-select: none;
+	-webkit-user-drag: none;
+}
+svg {
+	top: 0px;
+	left: 0px;
+	z-index: 8;
+	width: 100%;
+	height: 100%;
+	stroke-width: 2px;
+	position: absolute;
+	stroke-linecap: round;
+}
+label {
+	margin-left: 2px;
+	margin-right: 2px;
+	font-family: monospace;
+	text-shadow: 2px 2px 2.8px #000a;
+}
+
+/*
+	Buttons
+*/
+.BTN_TOP {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.BTN_BOTTOM {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.BTN_LEFT {
+	margin: 0px !important;
+	border-radius: 6px 0px 0px 6px;
+}
+.BTN_RIGHT {
+	margin: 0px !important;
+	border-radius: 0px 6px 6px 0px;
+}
+.BTN_MENU_TOP {
+	border-radius: 4px;
+}
+
+/*
+	Main divs
+*/
+.DIV_CHECKBOX {
+    margin: 6px 0px 6px 0px;
+}
+.DIV_TITLE {
+	font-size: 16px;
+	text-align: center;
+	margin: 6px 0px 2px 0px;
+}
+.APP_CANVAS {
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	background-color: #000;
+	background-image: linear-gradient(180deg, #000019, #002);
+}
+.APP_MENU {
+	z-index: 100;
+	overflow: hidden;
+	position: absolute;
+	background-color: #0000;
+	transition-duration: 0.8s;
+	backdrop-filter: blur(4px);
+	box-shadow: 0px 0px 10px #000;
+	transition-timing-function: cubic-bezier(0,1,0,1);
+	background-image: linear-gradient(180deg, #706099aa, #3e2e67aa);
+}
+.MENU_TOP {
+	top: 0px;
+	left: 10px;
+	height: 0px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% - 196px);
+	padding: 0px 10px 0px 0px;
+	border-radius: 0px 0px 8px 8px;
+}
+.MENU_TOP_BTNS {
+	left: 0px;
+	height: 30px;
+	display: flex;
+	flex-wrap: nowrap;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+}
+.MENU_TOP_BG {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 90;
+	height: 30px;
+	cursor: help;
+	display: none;
+	position: absolute;
+	background-color: #200;
+}
+.MENU_RIGHT {
+	top: 0px;
+	right: 0px;
+	width: 0px;
+	height: 100%;
+	overflow: hidden;
+	padding-top: 10px;
+	text-align: center;
+	padding-bottom: 10px;
+	box-shadow: 0px 0px 10px #000;
+}
+.APP_MAP_CANVAS {
+	z-index: 1;
+	top: -50000px;
+	left: -50000px;
+	width: 100000px;
+	font-size: 13px;
+	height: 100000px;
+	overflow: hidden;
+	position: absolute;
+	background-color: #0000;
+	transition-duration: 1s;
+	box-shadow: 0px 0px 0px 2px #f00 inset;
+	transition-timing-function: cubic-bezier(0,1,0,1);
+}
+.DIV_ROOM {
+	width: auto;
+	z-index: 10;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+	align-content: center;
+	font-family: monospace;
+	justify-content: center;
+	background-color: #0000;
+	text-shadow: 1px 1px 2px #000;
+	box-shadow: 0px 0px 0px 2px #fff inset;
+	background-image: linear-gradient(180deg, #00642f, #0a0);
+}
+.RT {
+	display: flex;
+	overflow: hidden;
+	min-height: 42px;
+	flex-wrap: nowrap;
+	align-items: center;
+	flex-direction: row;
+	font-family: monospace;
+	justify-content: center;
+	width: calc(100% - 20px);
+	margin: 8px 0px 0px 10px;
+	text-shadow: 1px 1px 2px #000;
+	box-shadow: 0px 0px 0px 2px #fff inset;
+}
+
+/*
+	DIV_ROOM Variants
+*/
+.PLAYER_PRESENT {
+	animation-delay: 0s;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	text-shadow: 0px 0px 4px #002d;
+	animation-name: PLAYER_PRESENT;
+	background-image: none !important;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.SAVE_ROOM {
+	border-radius: 4px 10px 4px 10px;
+	background-image: linear-gradient(0deg, #7a66a5, #493c64);
+}
+.GAME_START {
+	border-radius: 14px 0px 0px 14px;
+}
+.GAME_END {
+	border-radius: 0px 14px 14px 0px;
+	animation-duration: 10s;
+	animation-name: HUE_CIRCLE;
+	text-shadow: 1px 1px 2px #000;
+}
+.BIORAND_OBJECTIVE {
+	border-radius: 12px !important;
+	background-image: linear-gradient(180deg, #005c64, #0094aa);
+}
+
+/*
+	Process capture status
+*/
+.RE3_CAPTURE_ICON {
+	width: 15px;
+	height: 15px;
+	border-radius: 100px;
+	background-color: #000;
+	margin: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 6px #000 inset;
+	background-image: linear-gradient(180deg, #000, #333);
+}
+.RE3_CAPTURE_ICON_ON {
+	box-shadow: 0px 0px 6px #0f06;
+	background-image: linear-gradient(180deg, #0e0, #090);
+}
+
+/*
+	Options
+*/
+.BTN_OPTIONS {
+	width: 148px;
+}
+
+/*
+	SVG
+*/
+.SVG_CURRENT_FLOW {
+	stroke: #0f0;
+	stroke-dasharray: 6;
+	animation: CONNECTION_FLOW 2s linear;
+	filter: drop-shadow(0px 0px 2px #fff9);
+	animation-iteration-count: infinite !important;
+}
+
+/*
+	Animations
+*/
+@keyframes PLAYER_PRESENT {
+
+	0% {
+		background-color: #008;
+	}
+
+	50% {
+		background-color: #00c;
+	}
+
+	100% {
+		background-color: #008;
+	}
+
+}
+@keyframes CONNECTION_FLOW {
+
+	100% {
+		stroke-dashoffset: -60;
+	}
+
+}
+@keyframes HUE_CIRCLE {
+	0% {
+		background-color: #008;
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		background-color: #00c;
+		filter: hue-rotate(180deg);
+	}
+	100% {
+		background-color: #008;
+		filter: hue-rotate(359deg);
+	}
+}
+
+/*
+	Misc.
+*/
+.none {
+	display: none !important;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.SEPARATOR_0 {
+	height: 2px;
+	border-radius: 4px;
+	background-color: #0000;
+	width: calc(100% - 20px);
+	margin: 4px 0px 4px 10px;
+	background-image: linear-gradient(90deg, #0000, #fff, #0000);
+}
