@@ -6,7 +6,7 @@
 const APP = {
 
 	// Version
-	version: '1.0.0',
+	version: '1.0.1',
 	name: 'R3 Auto Map View',
 
 	// Import other files
